@@ -1,6 +1,6 @@
 <?php
 
-namespace sevkikaragol\note\src\models;
+namespace sevkikaragol\note\models;
 
 use Yii;
 
