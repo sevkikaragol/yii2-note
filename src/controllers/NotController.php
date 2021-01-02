@@ -4,7 +4,7 @@ namespace sevkikaragol\note\controllers;
 
 use Yii;
 use sevkikaragol\note\models\Not;
-use sevkikaragol\note\NotSearch;
+use sevkikaragol\note\models\NotSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
