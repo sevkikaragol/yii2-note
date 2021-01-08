@@ -5,10 +5,11 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model sevkikaragol\note\models\Not */
 
-$this->title = 'Create Not';
+$this->title = 'unutma!';
 $this->params['breadcrumbs'][] = ['label' => 'Nots', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="not-create">
 
     <h1><?= Html::encode($this->title) ?></h1>

@@ -7,16 +7,25 @@ use yii\grid\GridView;
 /* @var $searchModel sevkikaragol\note\models\NotSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Nots';
+
+
+
+$this->title = 'unutma!';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+
 <div class="not-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Not', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Not Yaz', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Çöp Kutusu', ['silinennot'], ['class' => 'btn btn-warning']) ?>
+
     </p>
+
+
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -26,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'name',
             'body:ntext',
 

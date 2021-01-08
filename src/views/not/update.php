@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model sevkikaragol\note\models\Not */
 
-$this->title = 'Update Not: ' . $model->name;
+$this->title = 'Düzenlendiğiniz not: ' . $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Nots', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';

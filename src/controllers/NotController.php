@@ -8,7 +8,8 @@ use sevkikaragol\note\models\NotSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use sevkikaragol\note\models\SilinenNot;
+use sevkikaragol\note\models\SilinenNotSearch;
 /**
  * NotController implements the CRUD actions for Not model.
  */
@@ -44,6 +45,20 @@ class NotController extends Controller
         ]);
     }
 
+
+    public function actionSilinennot()
+    {
+        $searchModel = new SilinenNotSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('silinenNot', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+
+
     /**
      * Displays a single Not model.
      * @param integer $id
@@ -67,7 +82,7 @@ class NotController extends Controller
         $model = new Not();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'id' => $model->id]);
         }
 
         return $this->render('create', [
@@ -104,6 +119,14 @@ class NotController extends Controller
      */
     public function actionDelete($id)
     {
+        $model = $this->findModel($id);
+        $silinen = new silinenNot();
+
+        $silinen->id = $model->id;
+        $silinen->name = $model->name;
+        $silinen->body = $model->body;
+        $silinen->save();
+
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

@@ -5,20 +5,20 @@ namespace sevkikaragol\note\models;
 use Yii;
 
 /**
- * This is the model class for table "not".
+ * This is the model class for table "silinenNot".
  *
  * @property int $id
  * @property string|null $name
  * @property string|null $body
  */
-class Not extends \yii\db\ActiveRecord
+class SilinenNot extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'not';
+        return 'silinenNot';
     }
 
     /**
