@@ -1,7 +1,7 @@
 # yii2-note
 
-Bu modül not tutulması amacıyla yapılmıştır.Bu amaç doğrultusunda tablo üzerinde bazı işlemler gerçekleştirebilirsiniz.
-![unutma](https://user-images.githubusercontent.com/49278142/104763518-13cf2780-5777-11eb-91fe-521fc2aded32.gif)
+Bu modül not tutulması amacıyla yapılmıştır.Bu amaç doğrultusunda tablo üzerinde bazı işlemler gerçekleştirebilirsiniz.<br/>
+![unutma](https://user-images.githubusercontent.com/49278142/104763518-13cf2780-5777-11eb-91fe-521fc2aded32.gif) <br/>
 
 Modül üzerinde gerçekleştirebildiğiniz işlemler:<br/>
 -Not oluşturabilirsiniz.<br/>
