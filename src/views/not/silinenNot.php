@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Notlara Dön', ['index'], ['class' => 'btn btn-danger']) ?>
+        <?= Html::a('Notlara Dön', ['index'], ['class' => 'btn btn-info']) ?>
 
 
     </p>
@@ -38,7 +38,6 @@ $this->params['breadcrumbs'][] = $this->title;
             //'id',
             'name',
             'body:ntext',
-
             //['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
